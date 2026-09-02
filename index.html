@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!--link para ir pro css.-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de clima</title>
@@ -10,18 +10,22 @@
 
 <body>
     <header>
-        <h1> Consulta do Clima 🌸</h1>
+        <h1> Consulta do Clima 🌸</h1> <!--Título da página.-->
     </header>
     <main>
         <article>
             <form>
-                <input type="text" id="cidade" placeholder="Digite uma cidade:">
+                <label for="cidade">Digite uma cidade:</label>
+                <input type="text" id="cidade" placeholder="Exemplo: Lages"> <!--Descrição sobre o que fazer.-->
 
-                <button>Buscar</button>
-                <p>Digite uma cidade para consultar.</p>
+                <button id="buscar">Buscar clima</button> <!--Botão para buscar-->
+                <p>Consulte uma cidade.</p> <!--Seção para escrever o nome do que procura.-->
             </form>
         </article>
+        <section id="resultado"> <!--Resultado que o JavaScript vai colocar.-->
+  
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
-
 </html>
