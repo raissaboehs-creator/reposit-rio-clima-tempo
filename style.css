@@ -1,0 +1,78 @@
+/* Página inteira */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f6;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+header {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #c94f82;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* QUADRADO ao redor da consulta */
+article {
+    background-color: #ffd9e8;
+    border: 3px solid #e58aad;
+    border-radius: 15px;
+
+    width: 400px;
+    padding: 35px;
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(180, 90, 130, 0.2);
+}
+
+/* Campo para digitar a cidade */
+input {
+    width: 85%;
+    padding: 12px;
+
+    border: 2px solid #e58aad;
+    border-radius: 8px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+/* Botão */
+button {
+    margin-top: 15px;
+
+    padding: 12px 30px;
+
+    background-color: #d85b8b;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Efeito do botão */
+button:hover {
+    background-color: #bd4775;
+}
+
+/* Texto */
+p {
+    color: #704357;
+    font-size: 16px;
+    margin-top: 20px;
+}
