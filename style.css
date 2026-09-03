@@ -1,33 +1,56 @@
-/* Página inteira */
+/*Página inteira*/
+
+*{
+    box-sizing: border-box;
+}
 body {
+
     margin: 0;
+
     padding: 0;
+
     background-color: #fff0f6;
+
     font-family: Arial, sans-serif;
 
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
 }
 
-/* Título */
+/* Título da página*/
+
 header {
+
     margin-top: 50px;
+
 }
 
 h1 {
+
     color: #c94f82;
+
     font-size: 32px;
+
     text-align: center;
+
 }
 
-/* QUADRADO ao redor da consulta */
+/* Quadrado ao redor da consulta */
+
 article {
+
     background-color: #ffd9e8;
+
     border: 3px solid #e58aad;
+
     border-radius: 15px;
 
     width: 400px;
+
     padding: 35px;
 
     margin-top: 20px;
@@ -35,44 +58,160 @@ article {
     text-align: center;
 
     box-shadow: 0 5px 15px rgba(180, 90, 130, 0.2);
+
 }
 
 /* Campo para digitar a cidade */
+
 input {
+
     width: 85%;
+
     padding: 12px;
 
     border: 2px solid #e58aad;
+
     border-radius: 8px;
 
     font-size: 16px;
+
     outline: none;
+
 }
 
 /* Botão */
+
 button {
+
     margin-top: 15px;
 
     padding: 12px 30px;
 
     background-color: #d85b8b;
+
     color: white;
 
     border: none;
+
     border-radius: 8px;
 
     font-size: 16px;
+
     cursor: pointer;
+
 }
 
 /* Efeito do botão */
+
 button:hover {
+
     background-color: #bd4775;
+
 }
 
-/* Texto */
+/* A descrição */
+
 p {
+
     color: #704357;
+
     font-size: 16px;
+
     margin-top: 20px;
+
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+    background-color: #cf7597;
+    color: #ccc;
+}
+/* Ajuste para funcionar em celulares */
+@media (max-width: 480px) {
+
+    header {
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    article {
+        width: 90%;
+        padding: 25px 15px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Para funcionar em celular */
+
+@media (max-width: 599px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header {
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    article {
+        width: 100%;
+        max-width: 400px;
+        padding: 25px 15px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Para funcionar em tablet */
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    body {
+        padding: 25px;
+    }
+
+    header {
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    article {
+        width: 80%;
+        max-width: 480px;
+        padding: 30px;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        width: auto;
+    }
 }
