@@ -49,9 +49,7 @@ article {
 
     border-radius: 15px;
 
-    width: 400px;
-
-    padding: 35px;
+    width: min(400px, calc(100% - 30px));
 
     margin-top: 20px;
 
@@ -130,32 +128,6 @@ footer {
     color: #ccc;
 }
 /* Ajuste para funcionar em celulares */
-@media (max-width: 480px) {
-
-    header {
-        margin-top: 20px;
-    }
-
-    h1 {
-        font-size: 26px;
-    }
-
-    article {
-        width: 90%;
-        padding: 25px 15px;
-    }
-
-    input {
-        width: 100%;
-    }
-
-    button {
-        width: 100%;
-    }
-}
-
-/* Para funcionar em celular */
-
 @media (max-width: 599px) {
 
     body {
@@ -174,15 +146,25 @@ footer {
         width: 100%;
         max-width: 400px;
         padding: 25px 15px;
+        box-sizing: border-box;
     }
 
-    input {
-        width: 100%;
-    }
-
+    input,
     button {
         width: 100%;
+        box-sizing: border-box;
     }
+}
+
+/*Para ajeitar o tamanho dos botões*/
+input, button {
+    min-height: 44px;
+    font-size: 16px;
+    padding: 10px 14px;
+}
+
+button {
+    margin-top: 8px;
 }
 
 /* Para funcionar em tablet */
